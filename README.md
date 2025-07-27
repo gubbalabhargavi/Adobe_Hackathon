@@ -1,106 +1,194 @@
-# Adobe India Hackathon 2025 - Round 1B  
-## Persona-Driven Document Intelligence  
-**Team Member:** Gubbala Bhargavi  
-**GitHub Repo:** [Adobe_Hackathon](https://github.com/gubbalabhargavi/Adobe_Hackathon)
+
+
+---
+
+```markdown
+# 🧠 Adobe India Hackathon 2025 - Round 1B  
+## Persona-Driven Document Intelligence
+
+![Docker](https://img.shields.io/badge/containerized-Docker-blue)
+![License: MIT](https://img.shields.io/badge/license-MIT-green)
+![Python](https://img.shields.io/badge/python-3.8+-blue.svg)
+![Model Size](https://img.shields.io/badge/model-<200MB-lightgrey)
+
+---
+
+## 📚 Table of Contents
+- [👤 Team Member](#-team-member)
+- [📌 Challenge Summary](#-challenge-summary)
+- [🧠 Our Approach](#-our-approach)
+- [🧰 Libraries & Models Used](#-libraries--models-used)
+- [🐳 How to Build and Run](#-how-to-build-and-run)
+- [📤 Output Format](#-output-format)
+- [⚠️ Constraints Followed](#️-constraints-followed)
+- [🔐 License](#-license)
+- [🙋‍♀️ Contact](#-contact)
+
+---
+
+## 👤 Team Member  
+**Gubbala Bhargavi**  
+📧 Email: [b22cs022@iitj.ac.in](mailto:b22cs022@iitj.ac.in)  
+🔗 GitHub: [gubbalabhargavi](https://github.com/gubbalabhargavi)  
 
 ---
 
 ## 📌 Challenge Summary
 
-The objective of this round is to build a system that acts as an intelligent document analyst. Given:
-- A set of PDFs,
-- A persona (role),
-- A job-to-be-done (task),
+The objective of this round is to build an **intelligent document analyst**.  
+Given:
+- A **set of PDF documents**
+- A **persona definition**
+- A **job-to-be-done**
 
-The system should extract the most relevant **sections** and **subsections** from the documents to help that persona accomplish their task.
+The system must extract the **most relevant sections and subsections** from the documents to help the persona accomplish their task effectively.
 
 ---
 
 ## 🧠 Our Approach
 
-We approached the problem using the following high-level steps:
+### 1. **Text Extraction**
+- All PDF files in `/app/input` are parsed using `PyMuPDF (fitz)`.
+- Extracts **page-wise text** with layout information.
 
-1. **Text Extraction:**  
-   All PDF files in the `/app/input` folder are parsed using `PyMuPDF` to extract page-wise raw text.
+### 2. **Semantic Chunking & Filtering**
+- Documents are segmented based on **headings** using visual layout cues (font size, boldness).
+- Basic heuristics help detect potential section titles.
 
-2. **Semantic Chunking and Filtering:**  
-   We segment the text by headings using layout features like font size and boldness. Basic heuristics are used to identify potential section titles.
+### 3. **Embedding-Based Relevance Scoring**
+- The **persona + task** string is embedded using a **lightweight SentenceTransformer model**.
+- Each section is also embedded.
+- Compute **cosine similarity** between persona-task and each section.
 
-3. **Embedding-Based Relevance Scoring:**  
-   - The persona and job-to-be-done text is embedded using a lightweight SentenceTransformer model.
-   - Each document section is also embedded.
-   - Cosine similarity is computed between the persona-task vector and section vectors.
+### 4. **Ranking**
+- Sections are **ranked** based on similarity scores.
+- Top sections are selected for further processing.
 
-4. **Ranking:**  
-   Sections are ranked based on relevance scores and the top few are picked for final output.
+### 5. **Subsection Extraction**
+- From top sections, extract **key sentences/paragraphs** aligned with the persona's goal using further filtering.
 
-5. **Subsection Extraction:**  
-   From top-ranked sections, fine-grained sentences/paragraphs are extracted that match the persona-task intent using semantic filtering again.
-
-6. **Output Format Generation:**  
-   A JSON output is written to `/app/output` that includes metadata, extracted sections (with title, rank, and page), and relevant refined subsection texts.
+### 6. **Output Generation**
+- Outputs a structured JSON file to `/app/output`, containing:
+  - Metadata
+  - Ranked sections (title, page, rank)
+  - Subsections with rich semantic context
 
 ---
 
 ## 🧰 Libraries & Models Used
 
-| Library | Purpose |
-|--------|---------|
-| `PyMuPDF (fitz)` | Page-wise text and metadata extraction from PDFs |
-| `SentenceTransformers` | Embedding documents and queries for semantic comparison |
-| `scikit-learn` | Cosine similarity computation |
-| `json`, `os`, `datetime` | File handling and formatting |
+| Library              | Purpose                                           |
+|----------------------|---------------------------------------------------|
+| `PyMuPDF (fitz)`     | PDF text & layout metadata extraction             |
+| `SentenceTransformers` | Semantic embeddings for persona and sections     |
+| `scikit-learn`       | Cosine similarity computation                     |
+| `json`, `os`, `datetime` | File handling & formatting utilities          |
 
-> **Note:** The model used is under 200MB and is run entirely on CPU. No internet access is needed during execution.
+> ✅ Model is < 200MB, CPU-only, no internet access needed.
 
 ---
 
-## 🐳 How to Build and Run Your Solution
-
-Your solution should be run in a Docker container with this structure:
+## 🐳 How to Build and Run
 
 ### 📁 Folder Structure
-Adobe_Hackathon/
-│
+```
+
+Adobe\_Hackathon/
 ├── Dockerfile
 ├── main.py
-├── Challenge_1B/
-│ ├── challenge1b_input.json
-│ ├── input/ # Contains PDFs
-│ └── output/ # Output JSON will be saved here
+└── Challenge\_1B/
+├── challenge1b\_input.json
+├── input/           # Put PDFs here
+└── output/          # Output JSON will be saved here
 
-### 🔨 Step 1: Build the Docker Image
+````
 
+---
+
+### 🔨 Step 1: Build Docker Image
 ```bash
 docker build --platform linux/amd64 -t adobe1b:bhargavi .
-Step 2: Run the Container
-Make sure your input PDFs are in a local input/ folder and output is an empty folder.
+````
 
-bash
+### ▶️ Step 2: Run the Docker Container
+
+```bash
 docker run --rm ^
   -v %cd%\Challenge_1B\input:/app/input ^
   -v %cd%\Challenge_1B\output:/app/output ^
   --network none adobe1b:bhargavi
-📤 Output Format
-The output will be a file like challenge1b_output.json inside /output, with the following fields:
+```
 
-metadata: input file list, persona, job-to-be-done, timestamp
+> Make sure:
+>
+> * PDFs are placed in `Challenge_1B/input`
+> * `Challenge_1B/output` is empty before running
 
-extracted_sections: ranked sections with document, title, page number
+---
 
-subsection_analysis: text blocks from relevant sections with context
+## 📤 Output Format
 
-⚠️ Constraints Followed
-Constraint	Met?
-Model size < 200MB	✅
-No internet access	✅
-CPU-only execution	✅
-Processing time < 60s	✅
+The output JSON file (e.g., `challenge1b_output.json`) contains:
 
-🔐 License
-This project is submitted as part of the Adobe India Hackathon 2025. Do not distribute before the deadline.
-MIT License applies after the competition.
+```json
+{
+  "metadata": {
+    "input_files": [...],
+    "persona": "...",
+    "job_to_be_done": "...",
+    "timestamp": "..."
+  },
+  "extracted_sections": [
+    {
+      "document": "...",
+      "title": "...",
+      "page": ...,
+      "score": ...
+    }
+  ],
+  "subsection_analysis": [
+    {
+      "section_title": "...",
+      "text_block": "...",
+      "page": ...
+    }
+  ]
+}
+```
 
-🙋‍♀️ Contact
-📧 Email: b22cs022@iitj.ac.in
-🔗 GitHub: gubbalabhargavi
+---
+
+## ⚠️ Constraints Followed
+
+| Constraint               | Met? |
+| ------------------------ | ---- |
+| Model size < 200MB       | ✅    |
+| No internet access       | ✅    |
+| CPU-only execution       | ✅    |
+| Processing time < 60 sec | ✅    |
+
+---
+
+## 🔐 License
+
+This project is submitted as part of the **Adobe India Hackathon 2025**.
+
+> ❗ Do not distribute before the official deadline.
+
+MIT License applies **after** the competition ends.
+
+---
+
+## 🙋‍♀️ Contact
+
+Feel free to reach out for questions or discussions:
+
+📧 Email: [b22cs022@iitj.ac.in](mailto:b22cs022@iitj.ac.in)
+🔗 GitHub: [gubbalabhargavi](https://github.com/gubbalabhargavi)
+
+```
+
+---
+
+✅ You can copy-paste this into your `README.md` file. If you'd like to auto-link sections or turn this into a GitHub Pages site later, I can help with that too.
+```
