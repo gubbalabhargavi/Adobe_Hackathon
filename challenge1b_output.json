@@ -1,0 +1,251 @@
+{
+    "metadata": {
+        "input_documents": [
+            "South of France - Cities.pdf",
+            "South of France - Cuisine.pdf",
+            "South of France - History.pdf",
+            "South of France - Restaurants and Hotels.pdf",
+            "South of France - Things to Do.pdf",
+            "South of France - Tips and Tricks.pdf",
+            "South of France - Traditions and Culture.pdf"
+        ],
+        "persona": "Travel Planner",
+        "job_to_be_done": "Plan a trip of 4 days for a group of 10 college friends.",
+        "processing_timestamp": "2025-07-21T14:59:43.697039"
+    },
+    "extracted_sections": [
+        {
+            "document": "South of France - Cities.pdf",
+            "page_number": 8,
+            "section_title": "Page 8",
+            "importance_rank": 1
+        },
+        {
+            "document": "South of France - Cities.pdf",
+            "page_number": 11,
+            "section_title": "Page 11",
+            "importance_rank": 2
+        },
+        {
+            "document": "South of France - Cities.pdf",
+            "page_number": 9,
+            "section_title": "Page 9",
+            "importance_rank": 3
+        },
+        {
+            "document": "South of France - Cuisine.pdf",
+            "page_number": 6,
+            "section_title": "Page 6",
+            "importance_rank": 1
+        },
+        {
+            "document": "South of France - Cuisine.pdf",
+            "page_number": 4,
+            "section_title": "Page 4",
+            "importance_rank": 2
+        },
+        {
+            "document": "South of France - Cuisine.pdf",
+            "page_number": 3,
+            "section_title": "Page 3",
+            "importance_rank": 3
+        },
+        {
+            "document": "South of France - History.pdf",
+            "page_number": 3,
+            "section_title": "Page 3",
+            "importance_rank": 1
+        },
+        {
+            "document": "South of France - History.pdf",
+            "page_number": 9,
+            "section_title": "Page 9",
+            "importance_rank": 2
+        },
+        {
+            "document": "South of France - History.pdf",
+            "page_number": 2,
+            "section_title": "Page 2",
+            "importance_rank": 3
+        },
+        {
+            "document": "South of France - Restaurants and Hotels.pdf",
+            "page_number": 9,
+            "section_title": "Page 9",
+            "importance_rank": 1
+        },
+        {
+            "document": "South of France - Restaurants and Hotels.pdf",
+            "page_number": 12,
+            "section_title": "Page 12",
+            "importance_rank": 2
+        },
+        {
+            "document": "South of France - Restaurants and Hotels.pdf",
+            "page_number": 11,
+            "section_title": "Page 11",
+            "importance_rank": 3
+        },
+        {
+            "document": "South of France - Things to Do.pdf",
+            "page_number": 9,
+            "section_title": "Page 9",
+            "importance_rank": 1
+        },
+        {
+            "document": "South of France - Things to Do.pdf",
+            "page_number": 11,
+            "section_title": "Page 11",
+            "importance_rank": 2
+        },
+        {
+            "document": "South of France - Things to Do.pdf",
+            "page_number": 7,
+            "section_title": "Page 7",
+            "importance_rank": 3
+        },
+        {
+            "document": "South of France - Tips and Tricks.pdf",
+            "page_number": 3,
+            "section_title": "Page 3",
+            "importance_rank": 1
+        },
+        {
+            "document": "South of France - Tips and Tricks.pdf",
+            "page_number": 7,
+            "section_title": "Page 7",
+            "importance_rank": 2
+        },
+        {
+            "document": "South of France - Tips and Tricks.pdf",
+            "page_number": 4,
+            "section_title": "Page 4",
+            "importance_rank": 3
+        },
+        {
+            "document": "South of France - Traditions and Culture.pdf",
+            "page_number": 2,
+            "section_title": "Page 2",
+            "importance_rank": 1
+        },
+        {
+            "document": "South of France - Traditions and Culture.pdf",
+            "page_number": 4,
+            "section_title": "Page 4",
+            "importance_rank": 2
+        },
+        {
+            "document": "South of France - Traditions and Culture.pdf",
+            "page_number": 3,
+            "section_title": "Page 3",
+            "importance_rank": 3
+        }
+    ],
+    "sub_section_analysis": [
+        {
+            "document": "South of France - Cities.pdf",
+            "page_number": 8,
+            "refined_text": "Aix-en-Provence: A City of Art and Culture \nHistory \nAix-en-Provence, founded by the Romans in 123 BC, is known for its elegant architecture, \nvibrant cultural scene, and association with the painter Paul Cézanne. The city's rich history is \nreflected in its beautiful buildings and lively atmosphere. Aix-en-Provence has been a center \nof art and learning for centuries, attracting artists, writers, and scholars. \nKey Attractions \n• \nCours Mirabeau: This grand boulevard, lined with plane trees, cafes, and fountains, is \nthe heart of Aix-en-Provence. It is a great place to soak up the city's atmosphere. \n• \nSaint-Sauveur Cathedral: This cathedral, built between the 5th and 17th centuries, \nfeatures a mix of architectural styles, including Romanesque, Gothic, and Baroque. It is \nknown for its beautiful cloister and triptych by Nicolas Froment. \n• \nHôtel de Ville: The town hall of Aix-en-Provence, built in the 17th century, is an elegant \nbuilding with a beautiful clock tower and an ornate "
+        },
+        {
+            "document": "South of France - Cities.pdf",
+            "page_number": 11,
+            "refined_text": "Perpignan: A Blend of French and Catalan Cultures \nHistory \nPerpignan, located near the Spanish border, has a unique blend of French and Catalan \ninfluences. The city was once the capital of the Kingdom of Majorca and has a rich history \nreflected in its architecture and culture. Perpignan's strategic location has made it a \ncrossroads of cultures and traditions. \nKey Attractions \n• \nPalace of the Kings of Majorca: This impressive fortress, built in the 13th century, was \nthe residence of the Kings of Majorca. It oﬀers panoramic views of the city and the \nsurrounding countryside. \n• \nPerpignan Cathedral: Also known as the Cathedral of Saint John the Baptist, this \nGothic cathedral was built in the 14th century and features a beautiful cloister and bell \ntower. \n• \nCastillet: This iconic red-brick gatehouse, built in the 14th century, is a symbol of \nPerpignan. It now houses the Casa Pairal Museum, which showcases the history and \nculture of the region. \n• \nLoge de Mer: This historic bu"
+        },
+        {
+            "document": "South of France - Cities.pdf",
+            "page_number": 9,
+            "refined_text": "Toulouse: The Pink City \nHistory \nToulouse, known as \"La Ville Rose\" (The Pink City) due to its distinctive terracotta buildings, \nis a vibrant city with a rich history. It was an important center during the Roman period and \nlater became a hub of the aerospace industry. Toulouse has been a center of learning and \nculture for centuries, with a prestigious university and numerous research institutions. \nKey Attractions \n• \nBasilica of Saint-Sernin: This Romanesque basilica, built between the 11th and 13th \ncenturies, is a UNESCO World Heritage site. It is one of the largest and best-preserved \nRomanesque churches in Europe. \n• \nCapitole de Toulouse: The city's town hall and theater, the Capitole, is an impressive \nbuilding with a neoclassical facade. It has been the seat of municipal power since the \n12th century. \n• \nJacobins Convent: This Gothic convent, founded in the 13th century, is known for its \nbeautiful cloister and the relics of Saint Thomas Aquinas. \n• \nCité de l'Espace: This"
+        },
+        {
+            "document": "South of France - Cuisine.pdf",
+            "page_number": 6,
+            "refined_text": "Culinary Experiences \nIn addition to dining at top restaurants, there are several culinary experiences you should \nconsider: \n• \nCooking Classes: Many towns and cities in the South of France oﬀer cooking classes \nwhere you can learn to prepare traditional dishes like bouillabaisse, ratatouille, and \ntarte tropézienne. These classes are a great way to immerse yourself in the local \nculture and gain hands-on experience with regional recipes. Some classes even \ninclude a visit to a local market to shop for fresh ingredients. \n• \nFood Markets: Visit local markets such as the Cours Saleya Market in Nice or the \nMarché Forville in Cannes to sample fresh produce, cheeses, and charcuterie. These \nmarkets are a feast for the senses, with stalls overflowing with colorful fruits and \nvegetables, fragrant herbs, and artisanal products. Take the time to chat with the \nvendors and learn about the local specialties. \n• \nWine Tours: The South of France is renowned for its wine regions, including Prove"
+        },
+        {
+            "document": "South of France - Cuisine.pdf",
+            "page_number": 4,
+            "refined_text": "Must-Visit Restaurants \nTo truly experience the culinary delights of the South of France, here are some restaurants \nyou should consider visiting: \n• \nLe Petit Nice Passedat (Marseille): A three-Michelin-starred restaurant oﬀering \nexquisite seafood dishes and stunning views of the Mediterranean. Chef Gérald \nPassedat is known for his innovative approach to seafood, creating dishes that are \nboth visually stunning and incredibly flavorful. The restaurant's location on the cliﬀs \noverlooking the sea adds to the overall dining experience. \n• \nLa Chèvre d'Or (Èze): Located in a medieval village, this two-Michelin-starred \nrestaurant serves refined Provençal cuisine with breathtaking views of the French \nRiviera. The restaurant's terrace oﬀers panoramic views of the Mediterranean, making \nit the perfect spot for a romantic dinner. The menu features dishes that highlight the \nregion's fresh, seasonal ingredients. \n• \nLe Mirazur (Menton): Ranked among the world's best restaurants, Le Mirazur"
+        },
+        {
+            "document": "South of France - Cuisine.pdf",
+            "page_number": 3,
+            "refined_text": "Famous Dishes \nThe South of France is home to many iconic dishes that you must try during your visit: \n• \nBouillabaisse: A traditional fish stew from Marseille, made with various types of fish, \nshellfish, and a flavorful broth seasoned with saﬀron and herbs. Bouillabaisse is \ntypically served with rouille, a garlicky mayonnaise, and crusty bread. The dish is a \ncelebration of the sea and is best enjoyed in a seaside restaurant with a view of the \nMediterranean. \n• \nRatatouille: A vegetable stew made with eggplant, zucchini, bell peppers, tomatoes, \nand onions, seasoned with herbs de Provence. Ratatouille can be served as a main \ndish or as a side, and it pairs beautifully with grilled meats or fish. The dish is a \ntestament to the region's love for fresh, seasonal produce. \n• \nSalade Niçoise: A refreshing salad with tuna, hard-boiled eggs, tomatoes, green beans, \nolives, and anchovies, dressed with olive oil and vinegar. Salade Niçoise is a perfect \nexample of the Mediterranean diet, "
+        },
+        {
+            "document": "South of France - History.pdf",
+            "page_number": 3,
+            "refined_text": "Nice: The Jewel of the French Riviera \nNice, located on the French Riviera, has been a popular destination for centuries. Its history \ndates back to the ancient Greeks, who founded the city around 350 BC. Nice later became a \nRoman colony and has since evolved into a glamorous resort town. \nKey Historical Sites in Nice \n• \nCastle Hill (Colline du Château): This hilltop park oﬀers stunning views of Nice and \nthe Mediterranean. It was once the site of a medieval castle, which was destroyed in \nthe 18th century. \n• \nPromenade des Anglais: This famous seaside promenade was built in the 19th century \nand named after the English aristocrats who frequented Nice. It's perfect for a leisurely \nstroll along the coast. \n• \nOld Town (Vieux Nice): The historic center of Nice is a labyrinth of narrow streets, \nbaroque churches, and bustling markets. Don't miss the Cours Saleya market, where \nyou can find fresh produce, flowers, and local delicacies. \n• \nRussian Orthodox Cathedral: Built in the early"
+        },
+        {
+            "document": "South of France - History.pdf",
+            "page_number": 9,
+            "refined_text": "Aix-en-Provence: A City of Art and Culture \nAix-en-Provence, founded by the Romans in 123 BC, is known for its elegant architecture, \nvibrant cultural scene, and association with the painter Paul Cézanne. The city's rich history is \nreflected in its beautiful buildings and lively atmosphere. \nKey Historical Sites in Aix-en-Provence \n• \nCours Mirabeau: This grand boulevard, lined with plane trees, cafes, and fountains, is \nthe heart of Aix-en-Provence. It is a great place to soak up the city's atmosphere. \n• \nSaint-Sauveur Cathedral: This cathedral, built between the 5th and 17th centuries, \nfeatures a mix of architectural styles, including Romanesque, Gothic, and Baroque. It is \nknown for its beautiful cloister and triptych by Nicolas Froment. \n• \nHôtel de Ville: The town hall of Aix-en-Provence, built in the 17th century, is an elegant \nbuilding with a beautiful clock tower and an ornate facade. The square in front of the \nHôtel de Ville is a lively spot, often hosting markets and eve"
+        },
+        {
+            "document": "South of France - History.pdf",
+            "page_number": 2,
+            "refined_text": "Marseille: The Oldest City in France \nMarseille, founded by Greek sailors around 600 BC, is the oldest city in France. Its strategic \nlocation on the Mediterranean coast made it a vital trading port throughout history. The city's \nrich cultural heritage is reflected in its diverse architecture and vibrant atmosphere. \nKey Historical Sites in Marseille \n• \nOld Port (Vieux-Port): The heart of Marseille, the Old Port has been a bustling harbor \nfor over 2,600 years. Today, it is a lively area filled with cafes, restaurants, and \nmarkets. \n• \nBasilica of Notre-Dame de la Garde: This iconic basilica, perched on a hill \noverlooking the city, oﬀers panoramic views of Marseille and the Mediterranean Sea. \nBuilt in the 19th century, it is a symbol of the city's maritime heritage. \n• \nFort Saint-Jean: Constructed in the 17th century, this fort guards the entrance to the \nOld Port. It now houses part of the Museum of European and Mediterranean \nCivilizations (MuCEM). \n• \nLe Panier: The oldest dis"
+        },
+        {
+            "document": "South of France - Restaurants and Hotels.pdf",
+            "page_number": 9,
+            "refined_text": "Family-Friendly Hotels \n• \nClub Med Opio en Provence (Opio): A family-friendly resort oﬀering a wide range of \nactivities for children and adults, including sports, entertainment, and kids' clubs. The \nbeautiful setting and all-inclusive amenities make it a hassle-free vacation spot. \n• \nLe Mas de Pierre (Saint-Paul-de-Vence): A luxurious family-friendly hotel oﬀering \nspacious rooms, beautiful gardens, and a variety of activities for children. The elegant \ndecor and attentive service ensure a comfortable stay for families. \n• \nHôtel Les Roches Rouges (Saint-Raphaël): A family-friendly hotel located on the \nbeach, oﬀering comfortable rooms, a kids' club, and a variety of water sports. The \nbeachfront location and family-oriented amenities make it a great choice for a seaside \nvacation. \n• \nChâteau de Berne (Lorgues): A family-friendly hotel located on a vineyard, oﬀering \nspacious rooms, a kids' club, and a variety of outdoor activities. The picturesque \nsetting and family-friendly fac"
+        },
+        {
+            "document": "South of France - Restaurants and Hotels.pdf",
+            "page_number": 12,
+            "refined_text": "Luxurious Hotels \n• \nGrand-Hôtel du Cap-Ferrat, A Four Seasons Hotel (Saint-Jean-Cap-Ferrat): A luxurious \nhotel set on 7 hectares of Mediterranean gardens, oﬀering elegant rooms, a spa, and a \nprivate beach. The exclusive setting and world-class amenities make it a top choice for \nluxury travelers. \n• \nHôtel de Paris Monte-Carlo (Monaco): A luxurious hotel located in the heart of \nMonaco, oﬀering opulent rooms, a world-class spa, and several Michelin-starred \nrestaurants. The historic grandeur and exceptional service make it a premier \ndestination. \n• \nChâteau Saint-Martin & Spa (Vence): A luxurious hotel set in a historic château, \noﬀering elegant rooms, a Michelin-starred restaurant, and a world-class spa. The \ntranquil setting and luxurious amenities make it a perfect getaway. \n• \nAirelles Château de la Messardière (Saint-Tropez): A luxurious hotel set in a historic \nchâteau, oﬀering elegant rooms, beautiful gardens, and stunning views of the \nMediterranean. The refined ambiance an"
+        },
+        {
+            "document": "South of France - Restaurants and Hotels.pdf",
+            "page_number": 11,
+            "refined_text": "Upscale Hotels \n• \nHotel Negresco (Nice): A historic five-star hotel located on the Promenade des \nAnglais, oﬀering luxurious rooms and exceptional service. The opulent decor and \nprime location make it a landmark in Nice. \n• \nInterContinental Marseille - Hotel Dieu (Marseille): A luxurious hotel located in a \nbeautifully restored 18th-century building, oﬀering stunning views of the Old Port and \nthe city. The elegant rooms and top-notch amenities make it a standout choice. \n• \nHotel Martinez (Cannes): A luxurious hotel located on the Boulevard de la Croisette, \noﬀering elegant rooms, a private beach, and a Michelin-starred restaurant. The \nglamorous setting and high-end services make it a favorite among celebrities. \n• \nLa Bastide de Gordes (Gordes): A luxurious hotel located in a historic building, \noﬀering elegant rooms, beautiful gardens, and stunning views of the Luberon Valley. \nThe refined decor and serene atmosphere make it a perfect retreat. \n• \nHôtel Barrière Le Majestic (Can"
+        },
+        {
+            "document": "South of France - Things to Do.pdf",
+            "page_number": 9,
+            "refined_text": "Family-Friendly Activities \nThe South of France oﬀers a variety of activities that are perfect for families with children: \nTheme Parks and Attractions \n• \nAntibes: Visit Marineland for marine shows and an aquarium. \n• \nFréjus: Cool oﬀ at Aqualand water park. \n• \nVilleneuve-Loubet: Enjoy quirky attractions at Le Village des Fous. \n• \nMonteux: Spend a day at Parc Spirou, a theme park based on the famous comic book \ncharacter. \n• \nLa Palmyre: Explore the La Palmyre Zoo, home to a wide variety of animals. \n• \nCap d'Agde: Have fun at Luna Park, an amusement park with rides and games. \n• \nToulouse: Visit the Cité de l'Espace, a space-themed science museum with interactive \nexhibits. \nOutdoor Adventures \n• \nVerdon Gorge: Take a family hike or rent paddle boats to explore the stunning Verdon \nGorge. \n• \nCamargue Natural Park: Explore wetlands with wild horses and flamingos, and enjoy \nhorseback riding, bird watching, and boat tours. \n• \nVarious Locations: Try tree-top adventure parks with zip"
+        },
+        {
+            "document": "South of France - Things to Do.pdf",
+            "page_number": 11,
+            "refined_text": "Nightlife and Entertainment \nThe South of France oﬀers a vibrant nightlife scene, with options ranging from chic bars to \nlively nightclubs: \nBars and Lounges \n• \nMonaco: Enjoy classic cocktails and live jazz at Le Bar Americain, located in the Hôtel \nde Paris. \n• \nNice: Try creative cocktails at Le Comptoir du Marché, a trendy bar in the old town. \n• \nCannes: Experience dining and entertainment at La Folie Douce, with live music, DJs, \nand performances. \n• \nMarseille: Visit Le Trolleybus, a popular bar with multiple rooms and music styles. \n• \nSaint-Tropez: Relax at Bar du Port, known for its chic atmosphere and waterfront \nviews. \n• \nMontpellier: Enjoy craft cocktails at Papa Doble, a speakeasy-style bar. \n• \nToulouse: Sip on cocktails at Fat Cat, a stylish bar with a vintage vibe. \nNightclubs \n• \nSaint-Tropez: Dance at the famous Les Caves du Roy, known for its glamorous \natmosphere and celebrity clientele. \n• \nNice: Party at High Club on the Promenade des Anglais, featuring multipl"
+        },
+        {
+            "document": "South of France - Things to Do.pdf",
+            "page_number": 7,
+            "refined_text": "Relaxation and Wellness \nFor those seeking relaxation and rejuvenation, the South of France oﬀers plenty of options: \nSpa and Wellness Retreats \n• \nAix-en-Provence: Visit Thermes Sextius for thermal baths and massages. \n• \nBordeaux: Enjoy vinotherapy treatments at Les Sources de Caudalie. \n• \nVichy: Experience hydrotherapy and mud baths at Spa Vichy Célestins. \n• \nEvian-les-Bains: Relax at the Evian Resort, known for its mineral-rich waters. \n• \nSaint-Raphaël: Visit the Thalasso Spa for seawater treatments and relaxation. \n• \nBiarritz: Enjoy the luxurious spas and wellness centers in this coastal town. \n• \nCannes: Indulge in a pampering session at one of the many high-end spas. \nYoga and Meditation Retreats \n• \nProvence: Join a yoga retreat in the serene countryside. \n• \nPyrenees: Escape to the mountains for a meditation retreat. \n• \nCôte d'Azur: Combine relaxation with luxury at a wellness retreat. \n• \nLuberon: Participate in a holistic retreat with yoga, meditation, and organic meals"
+        },
+        {
+            "document": "South of France - Tips and Tricks.pdf",
+            "page_number": 3,
+            "refined_text": "Packing for All Seasons \nSpring (March to May) \n• \nClothing: Light sweaters, long-sleeve shirts, t-shirts, and a light jacket or raincoat. \n• \nFootwear: Comfortable walking shoes and sandals. \n• \nAccessories: Sunglasses, a hat, and a small umbrella. \n• \nAdditional Tips: Spring can be unpredictable, so be prepared for both sunny and rainy \ndays. Consider packing a lightweight scarf for cooler evenings. \nSummer (June to August) \n• \nClothing: Lightweight, breathable fabrics like cotton and linen. Pack t-shirts, shorts, \nsundresses, and swimwear. \n• \nFootwear: Sandals, flip-flops, and comfortable walking shoes. \n• \nAccessories: Sunglasses, a wide-brimmed hat, sunscreen, and a reusable water bottle. \n• \nAdditional Tips: The South of France can get very hot in the summer, so stay hydrated \nand seek shade during peak sun hours. Pack a cooling towel to help manage the heat. \nAutumn (September to November) \n• \nClothing: Light sweaters, long-sleeve shirts, t-shirts, and a medium-weight jacket. \n"
+        },
+        {
+            "document": "South of France - Tips and Tricks.pdf",
+            "page_number": 7,
+            "refined_text": "• \nAdditional Tips: Bring a favorite stuﬀed animal or comfort item to help kids feel at \nhome. Consider packing a travel potty for young children. \n \nSpecial Considerations \nBeach Trips \n• \nBeach Bag: A large, waterproof bag for essentials. \n• \nTowels: Lightweight, quick-drying beach towels. \n• \nBeach Toys: Buckets, shovels, and toys for kids. \n• \nSnorkeling Gear: Bring your own gear for a better fit and comfort. \n• \nAdditional Tips: Pack a beach umbrella or tent for shade and a cooler for drinks and \nsnacks. Consider bringing a waterproof phone case to protect your device. \nHiking and Outdoor Activities \n• \nBackpack: A sturdy, comfortable backpack for essentials. \n• \nWater Bottle: A reusable water bottle. \n• \nFirst Aid Kit: A small kit with band-aids, antiseptic wipes, and medications. \n• \nInsect Repellent: Protect against bugs and mosquitoes. \n• \nAdditional Tips: Wear moisture-wicking clothing and sturdy hiking boots. Bring a map \nand compass or GPS device. Pack energy bars or snacks"
+        },
+        {
+            "document": "South of France - Tips and Tricks.pdf",
+            "page_number": 4,
+            "refined_text": "• \nAdditional Tips: Winter is mild compared to other regions, but it's still important to \npack warm clothing for cooler evenings. Consider packing thermal underwear for \nextra warmth. \nPacking for Adults \nClothing \n• \nCasual Wear: Comfortable clothes for sightseeing and casual dining, like jeans, t-\nshirts, and casual dresses. \n• \nEvening Wear: Dressier outfits for dining out or events. Pack a nice dress or dress \npants and a blouse/shirt. \n• \nActive Wear: If you plan on hiking or outdoor activities, pack activewear like leggings, \nshorts, and moisture-wicking tops. \n• \nSwimwear: Don't forget your swimsuit for beach or pool visits. \n• \nAccessories: A stylish yet functional bag, a lightweight scarf, and a versatile jacket. \n• \nAdditional Tips: Pack a few statement pieces that can be dressed up or down, such as \na versatile dress or a pair of stylish shoes. \nToiletries \n• \nBasic Toiletries: Toothbrush, toothpaste, shampoo, conditioner, body wash, \ndeodorant, and personal hygiene items. "
+        },
+        {
+            "document": "South of France - Traditions and Culture.pdf",
+            "page_number": 2,
+            "refined_text": "Language and Literature \nProvençal Language \nThe Provençal language, also known as Occitan, has been a significant part of the cultural \nidentity of the South of France. Although French is the dominant language today, Provençal \nwas widely spoken until the 19th century. It is still preserved in literature, music, and local \nexpressions. Eﬀorts to revive and promote the language continue, with festivals and \neducational programs dedicated to its preservation. \nLiterature and Poetry \nThe South of France has inspired many writers and poets over the centuries. The troubadours \nof the medieval period, who composed and performed lyrical poetry, were particularly \ninfluential. Their works often celebrated chivalry, love, and nature. The region's literary \nheritage also includes famous authors like Marcel Pagnol, whose novels and plays vividly \ndepict Provençal life. \n \nFestivals and Celebrations \nCarnival of Nice \nHeld in Nice from mid-February to early March, the Carnival of Nice is one of t"
+        },
+        {
+            "document": "South of France - Traditions and Culture.pdf",
+            "page_number": 4,
+            "refined_text": "Truﬄes, often referred to as \"black diamonds,\" are a prized delicacy in the South of France. \nThe region's truﬄe season, which runs from November to March, is marked by truﬄe markets \nand festivals. Truﬄe hunting, typically done with trained dogs or pigs, is a time-honored \ntradition. The town of Richerenches hosts a truﬄe mass every January, where truﬄes are \nblessed by the local priest. \n \nArts and Crafts \nPottery and Ceramics \nThe South of France has a rich tradition of pottery and ceramics, with towns like Vallauris and \nBiot being renowned for their craftsmanship. Artisans create a wide range of items, from \nfunctional tableware to decorative pieces. The region's pottery often features vibrant colors \nand intricate designs, reflecting the local landscape and culture. \nLavender Products \nLavender is synonymous with Provence, and the region's lavender fields are a major \nattraction. The fragrant flowers are harvested to produce a variety of products, including \nessential oils, soaps"
+        },
+        {
+            "document": "South of France - Traditions and Culture.pdf",
+            "page_number": 3,
+            "refined_text": "accompanied by shepherds and their dogs. It's a unique opportunity to witness a living \ntradition and enjoy local food and music. \n \nTraditional Sports and Games \nPétanque \nPétanque is a popular game in the South of France, particularly in Provence. Played with \nmetal balls on a gravel surface, the objective is to throw the balls as close as possible to a \nsmall wooden ball called the cochonnet. Pétanque is more than just a game; it's a social \nactivity that brings people together in village squares and parks. The relaxed atmosphere and \nfriendly competition make it a beloved pastime. \nCourse Camarguaise \nThe Course Camarguaise is a traditional bullfighting sport unique to the Camargue region. \nUnlike Spanish bullfighting, the objective is not to harm the bull but to remove ribbons and \nother decorations from its horns. The razeteurs, or participants, demonstrate agility and \nbravery as they dodge the bull's charges. The sport is deeply rooted in local culture and is \noften accompanied"
+        }
+    ]
+}
