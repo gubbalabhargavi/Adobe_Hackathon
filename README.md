@@ -94,8 +94,8 @@ Adobe_Hackathon/
 ---
 
 ### 🔨 Step 1: Build Docker Image
-```bash
 docker build --platform linux/amd64 -t adobe1b:bhargavi .
+
  ### Step 2: Run the Docker Container
 docker run --rm ^
   -v %cd%\Challenge_1B\input:/app/input ^
