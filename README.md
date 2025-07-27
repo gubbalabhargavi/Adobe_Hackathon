@@ -1,6 +1,4 @@
-
-
----
+Here's the **complete and polished `README.md`** code block, ready to be copy-pasted into your GitHub repository:
 
 ```markdown
 # 🧠 Adobe India Hackathon 2025 - Round 1B  
@@ -9,7 +7,7 @@
 ![Docker](https://img.shields.io/badge/containerized-Docker-blue)
 ![License: MIT](https://img.shields.io/badge/license-MIT-green)
 ![Python](https://img.shields.io/badge/python-3.8+-blue.svg)
-![Model Size](https://img.shields.io/badge/model-<200MB-lightgrey)
+![Model Size](https://img.shields.io/badge/model-%3C200MB-lightgrey)
 
 ---
 
@@ -35,56 +33,53 @@
 
 ## 📌 Challenge Summary
 
-The objective of this round is to build an **intelligent document analyst**.  
+The objective is to build a system that acts as an **intelligent document analyst**.  
 Given:
 - A **set of PDF documents**
 - A **persona definition**
 - A **job-to-be-done**
 
-The system must extract the **most relevant sections and subsections** from the documents to help the persona accomplish their task effectively.
+The system should extract the **most relevant sections and subsections** to help the persona efficiently accomplish their task.
 
 ---
 
 ## 🧠 Our Approach
 
 ### 1. **Text Extraction**
-- All PDF files in `/app/input` are parsed using `PyMuPDF (fitz)`.
-- Extracts **page-wise text** with layout information.
+- Extract raw text from all PDF pages using `PyMuPDF (fitz)`.
 
 ### 2. **Semantic Chunking & Filtering**
-- Documents are segmented based on **headings** using visual layout cues (font size, boldness).
-- Basic heuristics help detect potential section titles.
+- Segment text using layout cues like **font size**, **boldness**, and **indentation** to identify headings and sections.
 
 ### 3. **Embedding-Based Relevance Scoring**
-- The **persona + task** string is embedded using a **lightweight SentenceTransformer model**.
-- Each section is also embedded.
-- Compute **cosine similarity** between persona-task and each section.
+- Embed both the **persona+task** and **each section** using `SentenceTransformers`.
+- Compute **cosine similarity** to find semantically relevant content.
 
 ### 4. **Ranking**
-- Sections are **ranked** based on similarity scores.
-- Top sections are selected for further processing.
+- Rank all sections by similarity score.
+- Select top sections for detailed review.
 
 ### 5. **Subsection Extraction**
-- From top sections, extract **key sentences/paragraphs** aligned with the persona's goal using further filtering.
+- From selected sections, extract key paragraphs/sentences using a second semantic filtering stage.
 
 ### 6. **Output Generation**
-- Outputs a structured JSON file to `/app/output`, containing:
-  - Metadata
-  - Ranked sections (title, page, rank)
-  - Subsections with rich semantic context
+- Save results in structured JSON including:
+  - Input metadata
+  - Ranked sections
+  - Subsection snippets
 
 ---
 
 ## 🧰 Libraries & Models Used
 
-| Library              | Purpose                                           |
-|----------------------|---------------------------------------------------|
-| `PyMuPDF (fitz)`     | PDF text & layout metadata extraction             |
-| `SentenceTransformers` | Semantic embeddings for persona and sections     |
-| `scikit-learn`       | Cosine similarity computation                     |
-| `json`, `os`, `datetime` | File handling & formatting utilities          |
+| Library                | Purpose                                           |
+|------------------------|---------------------------------------------------|
+| `PyMuPDF (fitz)`       | PDF text & metadata extraction                    |
+| `SentenceTransformers` | Semantic embeddings for persona and document      |
+| `scikit-learn`         | Cosine similarity computation                     |
+| `json`, `os`, `datetime` | File I/O and metadata formatting               |
 
-> ✅ Model is < 200MB, CPU-only, no internet access needed.
+> ✅ Lightweight model (<200MB), runs on CPU, no internet required.
 
 ---
 
@@ -110,6 +105,8 @@ Adobe\_Hackathon/
 docker build --platform linux/amd64 -t adobe1b:bhargavi .
 ````
 
+---
+
 ### ▶️ Step 2: Run the Docker Container
 
 ```bash
@@ -119,38 +116,38 @@ docker run --rm ^
   --network none adobe1b:bhargavi
 ```
 
-> Make sure:
+> ⚠️ Ensure:
 >
 > * PDFs are placed in `Challenge_1B/input`
-> * `Challenge_1B/output` is empty before running
+> * `Challenge_1B/output` is empty before execution
 
 ---
 
 ## 📤 Output Format
 
-The output JSON file (e.g., `challenge1b_output.json`) contains:
+The output is a file `challenge1b_output.json` in the `/output` folder, formatted as:
 
 ```json
 {
   "metadata": {
-    "input_files": [...],
-    "persona": "...",
-    "job_to_be_done": "...",
-    "timestamp": "..."
+    "input_files": ["document1.pdf", "document2.pdf"],
+    "persona": "PhD Researcher in Computational Biology",
+    "job_to_be_done": "Find recent breakthroughs in DNA sequencing",
+    "timestamp": "2025-07-27T18:00:00"
   },
   "extracted_sections": [
     {
-      "document": "...",
-      "title": "...",
-      "page": ...,
-      "score": ...
+      "document": "document1.pdf",
+      "title": "Advancements in DNA Sequencing",
+      "page": 3,
+      "score": 0.89
     }
   ],
   "subsection_analysis": [
     {
-      "section_title": "...",
-      "text_block": "...",
-      "page": ...
+      "section_title": "Advancements in DNA Sequencing",
+      "text_block": "Recent innovations include ...",
+      "page": 3
     }
   ]
 }
@@ -173,15 +170,15 @@ The output JSON file (e.g., `challenge1b_output.json`) contains:
 
 This project is submitted as part of the **Adobe India Hackathon 2025**.
 
-> ❗ Do not distribute before the official deadline.
+> ❗ Do not distribute publicly until the competition ends.
 
-MIT License applies **after** the competition ends.
+After the hackathon, this repository will be available under the [MIT License](https://opensource.org/licenses/MIT).
 
 ---
 
 ## 🙋‍♀️ Contact
 
-Feel free to reach out for questions or discussions:
+Feel free to connect or reach out for queries:
 
 📧 Email: [b22cs022@iitj.ac.in](mailto:b22cs022@iitj.ac.in)
 🔗 GitHub: [gubbalabhargavi](https://github.com/gubbalabhargavi)
@@ -190,5 +187,13 @@ Feel free to reach out for questions or discussions:
 
 ---
 
-✅ You can copy-paste this into your `README.md` file. If you'd like to auto-link sections or turn this into a GitHub Pages site later, I can help with that too.
+### ✅ What's Included:
+- Clean structure
+- Markdown best practices
+- Shields.io badges
+- Table of contents
+- Easy Docker run instructions
+- Full output example
+
+Let me know if you’d like to add deployment instructions or GitHub Actions for CI/CD.
 ```
