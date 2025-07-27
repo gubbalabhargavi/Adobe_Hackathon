@@ -83,32 +83,48 @@ The system should extract the **most relevant sections and subsections** to help
 ## 🐳 How to Build and Run
 
 ### 📁 Folder Structure
-Adobe_Hackathon/
+```
+
+Adobe\_Hackathon/
 ├── Dockerfile
 ├── main.py
-└── Challenge_1B/
-├── challenge1b_input.json
-├── input/ # Put PDFs here
-└── output/ # Output JSON will be saved here
+└── Challenge\_1B/
+├── challenge1b\_input.json
+├── input/           # Put PDFs here
+└── output/          # Output JSON will be saved here
+
+````
 
 ---
 
 ### 🔨 Step 1: Build Docker Image
+```bash
 docker build --platform linux/amd64 -t adobe1b:bhargavi .
+````
 
- ### Step 2: Run the Docker Container
+---
+
+### ▶️ Step 2: Run the Docker Container
+
+```bash
 docker run --rm ^
   -v %cd%\Challenge_1B\input:/app/input ^
   -v %cd%\Challenge_1B\output:/app/output ^
   --network none adobe1b:bhargavi
- Ensure:
+```
 
-PDFs are placed in Challenge_1B/input
+> ⚠️ Ensure:
+>
+> * PDFs are placed in `Challenge_1B/input`
+> * `Challenge_1B/output` is empty before execution
 
-Challenge_1B/output is empty before execution
+---
 
-###📤 Output Format
-The output is a file challenge1b_output.json in the /output folder, formatted as:
+## 📤 Output Format
+
+The output is a file `challenge1b_output.json` in the `/output` folder, formatted as:
+
+```json
 {
   "metadata": {
     "input_files": ["document1.pdf", "document2.pdf"],
@@ -132,22 +148,37 @@ The output is a file challenge1b_output.json in the /output folder, formatted as
     }
   ]
 }
-###⚠️ Constraints Followed
-Constraint	Met?
-Model size < 200MB	✅
-No internet access	✅
-CPU-only execution	✅
-Processing time < 60 sec	✅
+```
 
-###🔐 License
-This project is submitted as part of the Adobe India Hackathon 2025.
+---
 
-❗ Do not distribute publicly until the competition ends.
+## ⚠️ Constraints Followed
 
-After the hackathon, this repository will be available under the MIT License.
+| Constraint               | Met? |
+| ------------------------ | ---- |
+| Model size < 200MB       | ✅    |
+| No internet access       | ✅    |
+| CPU-only execution       | ✅    |
+| Processing time < 60 sec | ✅    |
 
-###🙋‍♀️ Contact
+---
+
+## 🔐 License
+
+This project is submitted as part of the **Adobe India Hackathon 2025**.
+
+> ❗ Do not distribute publicly until the competition ends.
+
+After the hackathon, this repository will be available under the [MIT License](https://opensource.org/licenses/MIT).
+
+---
+
+## 🙋‍♀️ Contact
+
 Feel free to connect or reach out for queries:
 
-📧 Email: b22cs022@iitj.ac.in
-🔗 GitHub: gubbalabhargavi
+📧 Email: [b22cs022@iitj.ac.in](mailto:b22cs022@iitj.ac.in)
+🔗 GitHub: [gubbalabhargavi](https://github.com/gubbalabhargavi)
+
+```
+
