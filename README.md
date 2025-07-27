@@ -1,6 +1,3 @@
-Here's the **complete and polished `README.md`** code block, ready to be copy-pasted into your GitHub repository:
-
-```markdown
 # 🧠 Adobe India Hackathon 2025 - Round 1B  
 ## Persona-Driven Document Intelligence
 
@@ -86,48 +83,32 @@ The system should extract the **most relevant sections and subsections** to help
 ## 🐳 How to Build and Run
 
 ### 📁 Folder Structure
-```
-
-Adobe\_Hackathon/
+Adobe_Hackathon/
 ├── Dockerfile
 ├── main.py
-└── Challenge\_1B/
-├── challenge1b\_input.json
-├── input/           # Put PDFs here
-└── output/          # Output JSON will be saved here
-
-````
+└── Challenge_1B/
+├── challenge1b_input.json
+├── input/ # Put PDFs here
+└── output/ # Output JSON will be saved here
 
 ---
 
 ### 🔨 Step 1: Build Docker Image
 ```bash
 docker build --platform linux/amd64 -t adobe1b:bhargavi .
-````
-
----
-
-### ▶️ Step 2: Run the Docker Container
-
-```bash
+ Step 2: Run the Docker Container
 docker run --rm ^
   -v %cd%\Challenge_1B\input:/app/input ^
   -v %cd%\Challenge_1B\output:/app/output ^
   --network none adobe1b:bhargavi
-```
+ Ensure:
 
-> ⚠️ Ensure:
->
-> * PDFs are placed in `Challenge_1B/input`
-> * `Challenge_1B/output` is empty before execution
+PDFs are placed in Challenge_1B/input
 
----
+Challenge_1B/output is empty before execution
 
-## 📤 Output Format
-
-The output is a file `challenge1b_output.json` in the `/output` folder, formatted as:
-
-```json
+📤 Output Format
+The output is a file challenge1b_output.json in the /output folder, formatted as:
 {
   "metadata": {
     "input_files": ["document1.pdf", "document2.pdf"],
@@ -151,49 +132,22 @@ The output is a file `challenge1b_output.json` in the `/output` folder, formatte
     }
   ]
 }
-```
+⚠️ Constraints Followed
+Constraint	Met?
+Model size < 200MB	✅
+No internet access	✅
+CPU-only execution	✅
+Processing time < 60 sec	✅
 
----
+🔐 License
+This project is submitted as part of the Adobe India Hackathon 2025.
 
-## ⚠️ Constraints Followed
+❗ Do not distribute publicly until the competition ends.
 
-| Constraint               | Met? |
-| ------------------------ | ---- |
-| Model size < 200MB       | ✅    |
-| No internet access       | ✅    |
-| CPU-only execution       | ✅    |
-| Processing time < 60 sec | ✅    |
+After the hackathon, this repository will be available under the MIT License.
 
----
-
-## 🔐 License
-
-This project is submitted as part of the **Adobe India Hackathon 2025**.
-
-> ❗ Do not distribute publicly until the competition ends.
-
-After the hackathon, this repository will be available under the [MIT License](https://opensource.org/licenses/MIT).
-
----
-
-## 🙋‍♀️ Contact
-
+🙋‍♀️ Contact
 Feel free to connect or reach out for queries:
 
-📧 Email: [b22cs022@iitj.ac.in](mailto:b22cs022@iitj.ac.in)
-🔗 GitHub: [gubbalabhargavi](https://github.com/gubbalabhargavi)
-
-```
-
----
-
-### ✅ What's Included:
-- Clean structure
-- Markdown best practices
-- Shields.io badges
-- Table of contents
-- Easy Docker run instructions
-- Full output example
-
-Let me know if you’d like to add deployment instructions or GitHub Actions for CI/CD.
-```
+📧 Email: b22cs022@iitj.ac.in
+🔗 GitHub: gubbalabhargavi
