@@ -96,7 +96,7 @@ Adobe_Hackathon/
 ### 🔨 Step 1: Build Docker Image
 ```bash
 docker build --platform linux/amd64 -t adobe1b:bhargavi .
- Step 2: Run the Docker Container
+ ### Step 2: Run the Docker Container
 docker run --rm ^
   -v %cd%\Challenge_1B\input:/app/input ^
   -v %cd%\Challenge_1B\output:/app/output ^
@@ -107,7 +107,7 @@ PDFs are placed in Challenge_1B/input
 
 Challenge_1B/output is empty before execution
 
-📤 Output Format
+###📤 Output Format
 The output is a file challenge1b_output.json in the /output folder, formatted as:
 {
   "metadata": {
@@ -132,21 +132,21 @@ The output is a file challenge1b_output.json in the /output folder, formatted as
     }
   ]
 }
-⚠️ Constraints Followed
+###⚠️ Constraints Followed
 Constraint	Met?
 Model size < 200MB	✅
 No internet access	✅
 CPU-only execution	✅
 Processing time < 60 sec	✅
 
-🔐 License
+###🔐 License
 This project is submitted as part of the Adobe India Hackathon 2025.
 
 ❗ Do not distribute publicly until the competition ends.
 
 After the hackathon, this repository will be available under the MIT License.
 
-🙋‍♀️ Contact
+###🙋‍♀️ Contact
 Feel free to connect or reach out for queries:
 
 📧 Email: b22cs022@iitj.ac.in
